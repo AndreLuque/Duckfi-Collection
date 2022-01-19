@@ -180,11 +180,34 @@ nav .img2 {
 }
 
 .minting-buttons .counter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
     margin-bottom: 1.4rem;
     max-width: 173px;
     max-height: 64px;
 }
-
+.counter-btn button{
+    border: none;
+    background:transparent;
+    text-align: center;
+    width: 100%;
+}
+.minting-buttons  .counter-btn button#counterMinus{
+    color: #A1AAB5 !important; 
+    padding-right: 4px; 
+    font-size: 22px;
+    text-align: center;
+    width: 100% !important;
+}
+.minting-buttons  .counter-btn button#counterPlus{
+    color: blue !important;
+     padding-left: 4px;
+     font-size: 22px;
+     text-align: center;
+     width: 100% !important;
+}
 .minting .row {
     min-height: 386px;
     overflow: hidden;
@@ -296,6 +319,9 @@ nav .img2 {
     }
     .minting-buttons {
         flex-direction: column;
+    }
+    .minting-buttons .counter-btn{
+        min-width: 148px;
     }
     .content h2 {
         font-family: "Poppins", sans-serif;
@@ -742,7 +768,7 @@ nav .img2 {
     }
 }
 
-@media (min-width:576){
+@media (min-width:576px){
 .hero--vector-image{
     width: 100%;
 }
